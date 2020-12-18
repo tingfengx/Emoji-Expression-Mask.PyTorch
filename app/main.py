@@ -50,6 +50,7 @@ if __name__ == '__main__':
             print(res)
             continue
         t.append(time.time() - start)
+        cv2.namedWindow("Frame", cv2.WINDOW_NORMAL) # adjustable window size
         out = cv2.hconcat([frame, res])
         cv2.imshow("Frame", out)
         # 退出：Q

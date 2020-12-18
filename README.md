@@ -1,4 +1,10 @@
 
+## Package requirements
+You will need to install ```dlib```, ```imutils```, and ```cv2``` via:
+``````
+pip install dlib imutils opencv-python
+``````
+Other libraries we use are 
 ## Dataset preparation
 If the file you are running loads data from a csv, you can get contents of the ```data``` folder here: 
 ``````
@@ -49,4 +55,8 @@ https://drive.google.com/drive/folders/1-s15Vj3PvyLdFwypyMARGYDAK6ihccPD.
 ## Test model with your own input
 The file named ```load_and_test_qinchen.ipynb``` currently loads images from the folder ```./qinchen``` and makes preditions usinig a pretrained network. You can replace the images in the folder ```./qinchen``` and run this file to see the model prediction on your own face expressions. Note, this is only the second module in our pipeline, so in order to get a satisfactory performance you will have to crop out the face yourself.
 
-Test model with the entire pipeline:
+## Test model with the entire pipeline
+Open an IPython kernel, change directory to the ```CSC420-Project``` folder. With the necessary libraries installed, execute:
+``````
+python app/main.py 
+``````
