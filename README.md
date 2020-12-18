@@ -1,7 +1,7 @@
 # Real-time Facial Expression Emoji Masking with Convolutional Neutral Networks and Homography.
 **Authors: [Qinchen Wang](https://qcw171717.github.io/Personal-Website/), [Sixuan Wu](https://github.com/wsxwsx543/), [Tingfeng Xia](https://tingfengx.com)**
 
-## | [Report](./writeup/ba_cloud_report.pdf) | [Code](./) | [Demo](https://youtu.be/GCjtXw1y8Pw) | 
+## | [Report](./writeup/ba_cloud_report.pdf) | [Code](https://github.com/tingfengx/Emoji-Expression-Mask.PyTorch) | [Demo](https://youtu.be/GCjtXw1y8Pw) | 
 ## Enviornment
 You will need to install ```dlib```, ```imutils```, and ```cv2``` via:
 ``````
@@ -21,6 +21,7 @@ cd CSC420-Project/app
 python main.py 
 # a window should pop up and you will see your beautiful face and the masked result. 
 ``````
+Note: Once you start the app, if you don't see the window poping up, that's because we failed to detect your face, please adjust tha angle and make sure your face is complete in the camera. During the execution of the app, if you see that the video is stuck, that's also mostly likely because we didn't detect your face. 
 
 ## Pretrained Models
 Our implementation uses VGG BA SMALL network, whose model weights are already included in the standalone app. Here are all our trained models, in case you wish to experiment. 
@@ -55,7 +56,7 @@ Check ```train_and_test.ipynb``` for how to train the model once you have the da
 See the report for a comprehensive discussion of our experiments with VGG BA SMALL network. Below are some other experiments that we conducted. 
 
 ### ShuffleNet experiments
-All experiments related to ShuffleNet are stored in the branch ```543```. The main file that trains and validates the model is called ```shuffle_net.ipynb```. This file loads data from folders, and the version pushed to the branch experiments with the CK+ dataset. If you want to run the file with FER2013, please follow the guide in the section ```FER2013 dataset preparation``` on where the dataset is stored as image folders.
+The main file that trains and validates the model is called ```shuffle_net.ipynb```. This file loads data from folders, and the version pushed to the branch experiments with the CK+ dataset. If you want to run the file with FER2013, please follow the guide in the section ```FER2013 dataset preparation``` on where the dataset is stored as image folders.
 
 ### SqueezeNet experiments
 All experiments related to SqueezeNet are stored in the master branch. The main file that trains and validates the model is called ```csc420 squeezenet.ipynb```. If you would like to play with the model that achieved 97% accuracy on both the training and validation set for the CK+ dataset: 
