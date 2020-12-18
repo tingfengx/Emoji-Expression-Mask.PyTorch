@@ -12,12 +12,20 @@ https://drive.google.com/file/d/16bCUgqzr5YSyCSZ_rBhDSSaUfe3bj9E_/view?usp=shari
 ## Model preparation
 You can get the trained models here: 
 ``````
+# Xception pretrained weights
 https://drive.google.com/drive/folders/1--onPPhUraZ66TynL-t0kkXCHB5xJEJD?usp=sharing
+# VGG 11 pretrained weights
 https://drive.google.com/drive/folders/1-7ZRhX5FebJipVX8QJrMUmyAit8HOlTd?usp=sharing
+# VGG 13 pretrained weights
 https://drive.google.com/drive/folders/1-_QBy3oetol16KHse9scxTTtDxWfj-j6?usp=sharing
+# VGG 16 pretrained weights
 https://drive.google.com/drive/folders/1-rBFFW3wE7yt7C1b2KLScglkvK4sdvD_?usp=sharing
+# VGG 19 pretrained weights
 https://drive.google.com/drive/folders/1-s15Vj3PvyLdFwypyMARGYDAK6ihccPD?usp=sharing
+# VGG BA SMALL pretrained weights (the one that we are using in our report)
+# see the report for a detailed discussion 
 https://drive.google.com/drive/folders/107MvZVZgDMmjZGVai0edFsTRW2ww8fX6?usp=sharing
+# Squeeze net pretrained weights
 https://drive.google.com/file/d/1--7YW7iiLA8HRwlBhOgm1Dm9kek-knuW/view?usp=sharing
 ``````
 

@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # 从视频流循环帧
     cnt = 0
     detector = dlib.get_frontal_face_detector()
-    predictor = dlib.shape_predictor("models/shape_predictor_68_face_landmarks.dat")
+    predictor = dlib.shape_predictor("./models/shape_predictor_68_face_landmarks.dat")
     model = vgg_model.VGG("VGG_ba_small")
     model.load_state_dict(torch.load("./models/vgg_ba_test_model.t7", map_location=torch.device('cpu'))['net'])
     model.eval()
