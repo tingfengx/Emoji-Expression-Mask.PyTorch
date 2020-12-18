@@ -1,4 +1,10 @@
 
+## Package requirements
+You will need to install ```dlib```, ```imutils```, and ```cv2``` via:
+``````
+pip install dlib imutils opencv-python
+``````
+Other libraries we use are 
 ## Dataset preparation
 If the file you are running loads data from a csv, you can get contents of the ```data``` folder here: 
 ``````
