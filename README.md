@@ -1,6 +1,7 @@
 # Real-time Facial Expression Emoji Masking with Convolutional Neutral Networks and Homography.
-## | [Report](./writeup/ba_cloud_report.pdf) | [Code](./) | [Demo](https://youtu.be/GCjtXw1y8Pw) | 
+**Authors: [Qinchen Wang](https://qcw171717.github.io/Personal-Website/), [Sixuan Wu](https://github.com/wsxwsx543/), [Tingfeng Xia](https://tingfengx.com)**
 
+## | [Report](./writeup/ba_cloud_report.pdf) | [Code](./) | [Demo](https://youtu.be/GCjtXw1y8Pw) | 
 ## Enviornment
 You will need to install ```dlib```, ```imutils```, and ```cv2``` via:
 ``````
