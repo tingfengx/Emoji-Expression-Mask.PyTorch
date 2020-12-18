@@ -22,7 +22,7 @@ if __name__ == '__main__':
     detector = dlib.get_frontal_face_detector()
     predictor = dlib.shape_predictor("./models/shape_predictor_68_face_landmarks.dat")
     model = vgg_model.VGG("VGG_ba_small")
-    model.load_state_dict(torch.load("./models/vgg_ba_model.t7", map_location=torch.device('cpu'))['net'])
+    model.load_state_dict(torch.load("./models/vgg_ba_small_model.t7", map_location=torch.device('cpu'))['net'])
     model.eval()
     transform = transforms.Compose([
         transforms.Resize(44),

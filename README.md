@@ -1,10 +1,14 @@
 # Real-time Facial Expression Emoji Masking with Convolutional Neutral Networks and Homography.
-## | Report | Code | Demo | 
+## | [Report](./writeup/ba_cloud_report.pdf) | [Code](./) | [Demo](https://youtu.be/GCjtXw1y8Pw) | 
 
-## Package requirements
+## Enviornment
 You will need to install ```dlib```, ```imutils```, and ```cv2``` via:
 ``````
 pip install dlib imutils opencv-python
+# notice that you will need cmake if it is not yet installed on your machine, 
+# you can do so on mac
+brew install cmake
+# or check https://www.linuxfordevices.com/tutorials/install-cmake-on-linux for linux
 ``````
 See https://pytorch.org/get-started/locally/ for how to install ```torch``` and ```torchvision``` locally. 
 
@@ -43,6 +47,8 @@ Apart from our default VGG BA SMALL network implementation, we have also prepare
 https://drive.google.com/drive/folders/1sudFiDoV_-Ufie8UXULVA-x7Mz3i04fK?usp=sharing
 ``````
 The ```data.h5``` file provided is a preprocessed version of the FER2013 dataset, which you can use the torch dataloader load directly. You can also customize your preprocessing by editing and then running the ```preprocess_fer2013.py``` file and using the ```fer2013.csv``` file. A ```data.h5``` file should be generated in the ```data/``` folder. It contains your freshly processed dataset. 
+
+Check ```train_and_test.ipynb``` for how to train the model once you have the dataset ready. 
 
 ## Other Experiments
 See the report for a comprehensive discussion of our experiments with VGG BA SMALL network. Below are some other experiments that we conducted. 
