@@ -1,4 +1,9 @@
-''' Fer2013 Dataset class'''
+"""
+Fer2013 Dataset class
+
+reference : https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch 
+"""
+
 
 from __future__ import print_function
 from PIL import Image

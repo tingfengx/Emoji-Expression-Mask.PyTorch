@@ -1,3 +1,9 @@
+"""
+Preprocessing script for Fer2013 Dataset
+
+reference : https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch 
+"""
+
 # create data and label for FER2013
 # labels: 0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral
 import csv

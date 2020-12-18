@@ -1,3 +1,10 @@
+"""
+VGG Model Declaration in PyTorch,
+reference based on https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch 
+
+Author: bacloud (Qinchen Wang, Sixuan Wu, Tingfeng Xia)
+"""
+
 import torch.nn as nn
 import torch.nn.functional as F
 

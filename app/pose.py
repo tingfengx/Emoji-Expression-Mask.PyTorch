@@ -1,3 +1,9 @@
+"""
+Pose Estimation Module
+
+Author: bacloud (Qinchen Wang, Sixuan Wu, Tingfeng Xia)
+"""
+
 import cv2
 import dlib
 import numpy as np

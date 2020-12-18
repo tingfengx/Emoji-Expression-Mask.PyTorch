@@ -1,3 +1,7 @@
+"""
+reference : https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch 
+"""
+
 from __future__ import division
 import torch
 import math

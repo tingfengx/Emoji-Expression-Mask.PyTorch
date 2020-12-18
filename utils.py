@@ -2,6 +2,8 @@
     - progress_bar: progress bar mimic xlua.progress.
     - set_lr : set the learning rate
     - clip_gradient : clip gradient
+
+reference: https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch 
 '''
 
 import os
