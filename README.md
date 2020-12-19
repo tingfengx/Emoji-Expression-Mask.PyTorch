@@ -17,7 +17,7 @@ See https://pytorch.org/get-started/locally/ for how to install ```torch``` and 
 The ```app``` folder contains a standalone app that allows you test our pipeline with input from your own webcam! You can do so by 
 ``````
 # clone this repo via git
-cd CSC420-Project/app
+cd Emoji-Expression-Mask.PyTorch/app/
 python main.py 
 # a window should pop up and you will see your beautiful face and the masked result. 
 ``````
