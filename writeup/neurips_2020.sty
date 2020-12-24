@@ -53,10 +53,6 @@
 \renewcommand{\sfdefault}{phv}
 
 % change this every year for notice string at bottom
-\newcommand{\@neuripsordinal}{34th}
-\newcommand{\@neuripsyear}{2020}
-\newcommand{\@neuripslocation}{Vancouver, Canada}
-
 % acknowledgments
 \usepackage{environ}
 \newcommand{\acksection}{\section*{Acknowledgments and Disclosure of Funding}}
@@ -67,20 +63,10 @@
 
 % handle tweaks for camera-ready copy vs. submission copy
 \if@preprint
-%   \newcommand{\@noticestring}{%
-%     Preprint. Under review.%
-%   }
 \else
   \if@neuripsfinal
-    % \newcommand{\@noticestring}{%
-    %   \@neuripsordinal\/ Conference on Neural Information Processing Systems
-    %   (NeurIPS \@neuripsyear), \@neuripslocation.%
-    % }
+
   \else
-    % \newcommand{\@noticestring}{%
-    %   Submitted to \@neuripsordinal\/ Conference on Neural Information
-    %   Processing Systems (NeurIPS \@neuripsyear). Do not distribute.%
-    % }
 
     % hide the acknowledgements
     \NewEnviron{hide}{}
@@ -100,8 +86,8 @@
           \expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
           \expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
           \renewenvironment{#1}%
-                           {\linenomath\csname old#1\endcsname}%
-                           {\csname oldend#1\endcsname\endlinenomath}%
+                          {\linenomath\csname old#1\endcsname}%
+                          {\csname oldend#1\endcsname\endlinenomath}%
         }%
         \newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
           \patchAmsMathEnvironmentForLineno{#1}%
@@ -225,8 +211,8 @@
 % swap above/belowcaptionskip lengths for tables
 \renewenvironment{table}
   {\setlength{\abovecaptionskip}{\@neuripsbelowcaptionskip}%
-   \setlength{\belowcaptionskip}{\@neuripsabovecaptionskip}%
-   \@float{table}}
+  \setlength{\belowcaptionskip}{\@neuripsabovecaptionskip}%
+  \@float{table}}
   {\end@float}
 
 % footnote formatting
@@ -291,7 +277,7 @@
     \thispagestyle{empty}
     \@maketitle
     \@thanks
-    \@notice
+    % \@notice
   \endgroup
   \let\maketitle\relax
   \let\thanks\relax
@@ -343,15 +329,6 @@
   }
 }
 
-% add conference notice to bottom of first page
-\newcommand{\ftype@noticebox}{8}
-\newcommand{\@notice}{%
-  % give a bit of extra room back to authors on first page
-  \enlargethispage{2\baselineskip}%
-  \@float{noticebox}[b]%
-    \footnotesize\@noticestring%
-  \end@float%
-}
 
 % abstract styling
 \renewenvironment{abstract}%
