@@ -1,7 +1,7 @@
 # Real-time Facial Expression Emoji Masking with Convolutional Neutral Networks and Homography.
 **Authors: [Qinchen Wang](https://qcw171717.github.io/Personal-Website/), [Sixuan Wu](https://github.com/wsxwsx543/), [Tingfeng Xia](https://tingfengx.com)**
 
-## | [Report](./writeup/ba_cloud_report.pdf) | [Code](https://github.com/tingfengx/Emoji-Expression-Mask.PyTorch) | [Demo](https://youtu.be/GCjtXw1y8Pw) | 
+## | [Report](./writeup/main.pdf) | [Code](https://github.com/tingfengx/Emoji-Expression-Mask.PyTorch) | [Demo](https://youtu.be/GCjtXw1y8Pw) | 
 ## Enviornment
 You will need to install ```dlib```, ```imutils```, and ```cv2``` via:
 ``````
