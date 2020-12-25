@@ -124,20 +124,20 @@ Past work to mask emoji on people's face are generally low on emotion classifica
 
 \section{Approach}
 \subsection{Facial Expression Recognition}
-As shown in Table \ref{tab:vgg comparisons}, despite changes in number of model parameters, the validation and testing accuracy stayed mostly the same. This motivated us to develop the VGG BA SMALL architecture, which is obtained by deleting two convolution layers from VGG11. Figure \ref{fig:architecture vgg ba small} illustrates our architecture. 
+As shown in Table \ref{tab:vgg comparisons}, despite changes in number of model parameters, the validation and testing accuracy stayed mostly the same. This motivated us to develop the VGG BA SMALL architecture, which is obtained by deleting two convolution layers from VGG11. Refer to our code base for implementation \cite{code}. Figure \ref{fig:architecture vgg ba small} illustrates our architecture. 
 
 We fine tuned our VGG BA SMALL model by performing a grid search on combinations of different batch size, learning rate, learning rate decay factor. Due to limitations in computation power, our search is not too extensive. Our final results indicate that the initial hyper-parameter settings\footnote{Same as our experiments with VGG11, 13, 16, and 19 networks. Trained with cross entropy loss, using SGD with momentum of 0.9, $L^2$ regularization factor of 5e-4, batch size of 128, and a initial learning rate of 1e-2. The learning rate is decayed by a factor of 0.9 every 5 epochs since the 40th epoch until a full stop at 250 epochs. Gradient clipping was enabled during back propagation.} achieves the best accuracy. Results are shown in Table \ref{tab:vgg comparisons}. Figures \ref{fig:vgg ba small curves} and \ref{fig:vgg ba small confusion} show the training curves and test set confusion matrix respectively. The confusion matrix indicates that our model is generally strong in all categories, with possible weakness in sadness, fear and angry classes. Our best result achieves the 70\% classification accuracy tier with just a size of 23.98 Megabytes, much smaller than the established VGG models we mentioned earlier. It is also interesting to notice that the testing accuracies are consistently higher than validation accuracies in our experiments. We suspect this is due to randomness, i.e. random splitting of the dataset yielded a test set that resembles the training set slightly more than the validation set.
 \begin{figure}[]
     \centering
     \includegraphics[width=\textwidth]{figs/VGG_BA_SMALL.pdf}
-    \caption{Visualization of VGG BA SMALL architecture, showing only parts that contain trainable parameters. Omitted layers are described: (1) each convolution layer is followed by 2D Batch Normalization and then ReLU non-linearity. (2) Immediately before the dense layer, there is also a 2D average pooling layer. }
+    \caption{Visualization of VGG BA SMALL architecture, showing only parts that contain trainable parameters. Omitted layers are described: (1) each convolution layer is followed by 2D Batch Normalization and then ReLU non-linearity. (2) Immediately before the dense layer, there is also a 2D average pooling layer. Our code is publicly available at \cite{code}.}
     \label{fig:architecture vgg ba small}
 \end{figure}
 \begin{figure}[]
     \centering
     \includegraphics[width=\textwidth]{figs/acc.pdf}
     \includegraphics[width=\textwidth]{figs/loss.pdf}
-    \caption{Training and validation accuracy and loss curves for VGG BA SMALL architecture. Loss reported is averaged per-sample loss in each batch. }
+    \caption{Training and validation accuracy and loss curves for VGG BA SMALL architecture. Loss reported is averaged per-sample loss in each batch.}
     \label{fig:vgg ba small curves}
 \end{figure}
 \begin{figure}[]
