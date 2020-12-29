@@ -2,7 +2,7 @@
 **Authors: [Qinchen Wang](https://qcw171717.github.io/Personal-Website/), [Sixuan Wu](https://github.com/wsxwsx543/), [Tingfeng Xia](https://tingfengx.com)**
 
 
-## | [Report](./writeup/main.pdf) | arXiv (pending) | [Code](https://github.com/tingfengx/Emoji-Expression-Mask.PyTorch) | [Demo](https://youtu.be/GCjtXw1y8Pw) | 
+## | [Report](./writeup/main.pdf) | [arXiv(2012.13447)](https://arxiv.org/pdf/2012.13447.pdf) | [Code](https://github.com/tingfengx/Emoji-Expression-Mask.PyTorch) | [Demo](https://youtu.be/GCjtXw1y8Pw) | 
 ## Enviornment
 You will need to install ```dlib```, ```imutils```, and ```cv2``` via:
 ``````
